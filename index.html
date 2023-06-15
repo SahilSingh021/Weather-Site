@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Handlee&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Weather App | Sahil</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="images/page-logo.png" class="logo"></a>
+    </header>
+
+    <div class="main_container">
+        <div class="main_div">
+            <div class="input_div">
+                <input id="location_search" type="search" placeholder="Enter Location..." autocomplete="off" onkeyup="SearchLocation(event);"/>
+                <i class="ri-search-line" onclick="SearchLocation(event);"></i>
+            </div>
+
+            <div class="output_container">
+                <div class="output_div">
+                    <h1 id="temp_value">00</h1>
+                    <h6>°</h6>
+                </div>
+                <div class="slider_div">
+                    <label class="button" for="toggle" onclick="setTimeout(ChangeTemperatureFormat, 100);">
+                        <input id="toggle" type="checkbox" checked="true">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="line"></div>
+                <div class="output_container2">
+                    <div class="output_div2">
+                        <h1 id="location_h1">Location:</h1>
+                    </div>
+                    <div class="output_div2">
+                        <p id="location_output">............</p>
+                    </div>
+                    <div class="output_div2">
+                        <h1>Humidity:</h1>
+                        <p id="humidity_output">...</p>
+                    </div>
+                    <div class="output_div2">
+                        <h1>Wind:</h1>
+                        <p id="wind_output">...mph / ...kph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="hidden_temp" id="hidden_temp-c">00</h1>
+    <h1 class="hidden_temp" id="hidden_temp-f">00</h1>
+    <script src="js/script.js"></script>
+</body>
+</html>
