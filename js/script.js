@@ -17,7 +17,7 @@ function SearchLocation(event){
     var hidden_tempF = document.getElementById('hidden_temp-f');
 
     // Api Call
-    var api_link = `https://api.weatherapi.com/v1/current.json?key=API GOES HERE=${locationSearchElement.value}&aqi=no`;
+    var api_link = `https://api.weatherapi.com/v1/current.json?key=API KEY GOES HERE=${locationSearchElement.value}&aqi=no`;
     fetch(api_link)
         .then(response => {
             if (!response.ok) {
