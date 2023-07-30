@@ -1,6 +1,6 @@
 # WeatherSite
 
-The Weather Site is hosted at [https://sahilsingh021.github.io/WeatherSite/](https://sahilsingh021.github.io/WeatherSite/).
+The Weather Site is hosted at [https://sahilsingh021.github.io/WeatherSite/](https://sahilsingh021.github.io/Weather-Site/).
 
 ## Welcome to the WeatherSite Repository!
 
